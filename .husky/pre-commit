@@ -1,5 +1,10 @@
 #!/bin/sh
+set -e
+
+echo "Running pre-commit checks..."
+
 npm run type-check
-npm run lint:fix 
-npm run lint
+npm run lint:fix
 npm run format
+
+echo "All checks passed. Commit successful."
