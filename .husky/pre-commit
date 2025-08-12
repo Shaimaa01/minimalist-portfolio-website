@@ -1,3 +1,5 @@
-#!/usr/bin/env sh
-npx eslint --fix --ext .js,.jsx,.ts,.tsx .
-npx prettier --write .
+#!/bin/sh
+npm run type-check
+npm run lint:fix 
+npm run lint
+npm run format
