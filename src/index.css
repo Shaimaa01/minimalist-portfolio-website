@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-SlightlyDesaturatedCyan: #5FB4A2;
-  --color-DarkBlue: #203A4C;
-  --color-GrayishDarkBlue: #33323D;
-  --color-VeryLightGray: #FAFAFA;
-  --color-LightGray: #EAEAEB;
-  --color-BrightRed: #F43030;
+  --color-SlightlyDesaturatedCyan: #5fb4a2;
+  --color-DarkBlue: #203a4c;
+  --color-GrayishDarkBlue: #33323d;
+  --color-VeryLightGray: #fafafa;
+  --color-LightGray: #eaeaeb;
+  --color-BrightRed: #f43030;
 
-  --font-IbarraRealNova:"Ibarra Real Nova", serif;
-  --font-PublicSans:"Public Sans" ,sans-serif;
+  --font-IbarraRealNova: "Ibarra Real Nova", serif;
+  --font-PublicSans: "Public Sans", sans-serif;
 }
-
