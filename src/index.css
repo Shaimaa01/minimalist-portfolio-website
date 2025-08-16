@@ -13,10 +13,12 @@
   --font-PublicSans: "Public Sans", sans-serif;
 }
 
-body{
-  font-family:"Public Sans", sans-serif;
+body {
+  font-family: "Public Sans", sans-serif;
 }
 
-h1 , h2 , h3 {
-  font-family:"Ibarra Real Nova", serif;
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova", serif;
 }
