@@ -3,7 +3,7 @@ import { AboutSection } from "./home/AboutSection";
 
 export const HomePage = () => {
   return (
-    <main className="px-[32px]">
+    <main className="px-[32px] md:px-[39px]">
       <HeroSection />
       <AboutSection />
     </main>

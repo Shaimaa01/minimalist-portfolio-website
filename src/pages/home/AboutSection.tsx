@@ -1,15 +1,21 @@
-import aboutImage from "@/assets/images/homepage/mobile/image-homepage-profile@2x.jpg";
+import profileImageMobile from "@/assets/images/homepage/mobile/image-homepage-profile@2x.jpg";
+import profileImageTablet from "@/assets/images/homepage/tablet/image-homepage-profile@2x.jpg";
 
 export const AboutSection = () => {
   return (
-    <section className="mt-[96px]">
-      <img
-        src={aboutImage}
-        alt="Portrait of Alex Spencer"
-        className="w-full object-cover"
-      />
+    <section className="mt-[96px] md:flex md:gap-[69px] md:justify-between">
+      <picture>
+        <source media="(min-width: 768px)" srcSet={profileImageTablet} />
 
-      <div className="border-GrayishDarkBlue/15 mt-[32px] border-y pt-[32px] pb-[51px]">
+         <img
+        src={profileImageMobile}
+        alt="Portrait of Alex Spencer"
+        className="w-full md:min-w-[281px] h-full object-cover"
+      />
+      </picture>
+     
+
+      <div className="border-GrayishDarkBlue/15 mt-[32px] md:mt-0 border-y pt-[32px] pb-[51px] md:h-[600px]">
         <h2 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px]">
           About Me
         </h2>
