@@ -1,25 +1,26 @@
 import profileImageMobile from "@/assets/images/homepage/mobile/image-homepage-profile@2x.jpg";
 import profileImageTablet from "@/assets/images/homepage/tablet/image-homepage-profile@2x.jpg";
+import profileImageDesktop from "@/assets/images/homepage/desktop/image-homepage-profile@2x.jpg";
 
 export const AboutSection = () => {
   return (
-    <section className="mt-[96px] md:flex md:gap-[69px] md:justify-between">
+    <section className="mt-[96px] lg:mt-[150px] md:flex md:justify-between md:gap-[69px] xl:gap-[125px]">
       <picture>
+        <source media="(min-width: 1280px)" srcSet={profileImageDesktop} />
         <source media="(min-width: 768px)" srcSet={profileImageTablet} />
 
-         <img
-        src={profileImageMobile}
-        alt="Portrait of Alex Spencer"
-        className="w-full md:min-w-[281px] h-full object-cover"
-      />
+        <img
+          src={profileImageMobile}
+          alt="Portrait of Alex Spencer"
+          className="h-full w-full object-cover md:min-w-[281px] xl:min-w-[540px] "
+        />
       </picture>
-     
 
-      <div className="border-GrayishDarkBlue/15 mt-[32px] md:mt-0 border-y pt-[32px] pb-[51px] md:h-[600px]">
+      <div className="border-GrayishDarkBlue/15 mt-[32px] border-y pt-[32px] pb-[51px] md:mt-0 md:h-[600px] ">
         <h2 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px]">
           About Me
         </h2>
-        <p className="text-GrayishDarkBlue/80 mt-[28px] text-[16px] leading-[30px]">
+        <p className="text-GrayishDarkBlue/80 mt-[28px] text-[16px] leading-[30px] ">
           I’m a junior front-end developer looking for a new role in an exciting
           company. I focus on writing accessible HTML, using modern CSS
           practices and writing clean JavaScript. When writing JavaScript code,
