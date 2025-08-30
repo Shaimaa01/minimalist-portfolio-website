@@ -7,18 +7,17 @@ export const HeroSection = () => {
   return (
     <section className="relative">
       <picture>
-         <source media="(min-width: 1024px)" srcSet={heroImageDesktop} />
-        <source media="(min-width: 768px)"  srcSet={heroImageTablet} />
-       
+        <source media="(min-width: 1024px)" srcSet={heroImageDesktop} />
+        <source media="(min-width: 768px)" srcSet={heroImageTablet} />
 
         <img
           src={heroImageMobile}
           alt="Portfolio preview on a monitor"
-          className="w-full "
+          className="w-full"
         />
       </picture>
-      <div className="bg-VeryLightGray bottom-0 md:absolute md:h-[278px] lg:h-[357px] md:w-[514px] lg:w-[445px]">
-        <h1 className="text-GrayishDarkBlue pt-[24px] text-[40px] lg:text-[50px] lg:leading-[50px] leading-[42px] font-bold tracking-[-0.36px] lg:tracking-[-0.45px] md:pt-[56px] md:pr-[56px]">
+      <div className="bg-VeryLightGray bottom-0 md:absolute md:h-[278px] md:w-[514px] lg:h-[357px] lg:w-[445px]">
+        <h1 className="text-GrayishDarkBlue pt-[24px] text-[40px] leading-[42px] font-bold tracking-[-0.36px] md:pt-[56px] md:pr-[56px] lg:text-[50px] lg:leading-[50px] lg:tracking-[-0.45px]">
           Hey, I’m Alex Spencer and I love building beautiful websites
         </h1>
         <button className="bg-DarkBlue mt-[32px] flex h-[48px] w-[200px] cursor-pointer md:mt-[48px]">

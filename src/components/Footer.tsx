@@ -5,11 +5,11 @@ import linkedinIcon from "@/assets/images/icons/linkedin.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-GrayishDarkBlue mt-[80px] lg:mt-[150px] flex flex-col items-center gap-[40px] py-[56px] text-white md:mt-[96px] md:flex-row md:justify-between md:px-[39px] lg:px-[165px] md:py-[24px]">
-      <div className="flex flex-col gap-[40px] lg:gap-[48px] md:flex-row">
+    <footer className="bg-GrayishDarkBlue mt-[80px] flex flex-col items-center gap-[40px] py-[56px] text-white md:mt-[96px] md:flex-row md:justify-between md:px-[39px] md:py-[24px] lg:mt-[150px] lg:px-[165px]">
+      <div className="flex flex-col gap-[40px] md:flex-row lg:gap-[48px]">
         <img src={logoWhite} alt="Company logo" />
 
-        <ul className="flex flex-col items-center gap-[32px] lg:gap-[43px] text-[12px] tracking-[2px] md:flex-row uppercase">
+        <ul className="flex flex-col items-center gap-[32px] text-[12px] tracking-[2px] uppercase md:flex-row lg:gap-[43px]">
           <li>
             <a href="/">Home</a>
           </li>
