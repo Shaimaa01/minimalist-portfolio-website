@@ -5,7 +5,7 @@ type ProjectCardProps = {
 
 export const StaticPreviews = ({ project }: ProjectCardProps) => {
   return (
-    <section className="flex flex-col gap-[40px]">
+    <section className="flex flex-col gap-[40px] xl:gap-[28px]">
       <h3 className="text-GrayishDarkBlue text-[32px] leading-[42px] tracking-[-0.29px]">
         Static Previews
       </h3>

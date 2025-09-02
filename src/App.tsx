@@ -23,7 +23,7 @@ function AnimatedContent() {
         <Routes location={location}>
           <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-           <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
+          <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
         </Routes>
         <ContactCTA />
       </motion.main>

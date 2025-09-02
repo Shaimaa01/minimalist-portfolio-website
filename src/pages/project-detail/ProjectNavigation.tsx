@@ -20,12 +20,13 @@ const NavLink = ({
   const arrowIcon = isPrev ? arrowLeft : arrowRight;
   const alignment = isPrev ? "items-start" : "items-end text-right";
   const border = isPrev ? "border-r" : "";
+  const row = isPrev ? "md:flex-row" : "md:flex-row-reverse"
 
   return (
     <Link
       to={`/portfolio/${project.slug}`}
       onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
-      className={`border-GrayishDarkBlue/15 flex w-1/2 flex-col gap-[16px] py-[24px] ${alignment} ${border}`}
+      className={`border-GrayishDarkBlue/15 flex w-1/2 flex-col  md:items-center md:gap-[32px] gap-[16px] py-[24px] md:py-[32px] ${alignment} ${border} ${row}`}
     >
       <img src={arrowIcon} alt={label} />
       <div>

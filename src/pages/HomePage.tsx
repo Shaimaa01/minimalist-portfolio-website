@@ -3,7 +3,7 @@ import { AboutSection } from "./home/AboutSection";
 
 export const HomePage = () => {
   return (
-    <section className="px-[32px] md:px-[39px] lg:px-[165px] mb-[115px] md:mb-[96px] lg:mb-[150px]">
+    <section className="mb-[115px] px-[32px] md:mb-[96px] md:px-[39px] lg:mb-[150px] lg:px-[165px]">
       <HeroSection />
       <AboutSection />
     </section>
