@@ -43,7 +43,9 @@ export const FormField = ({
       ) : (
         <input {...commonProps} type={type} />
       )}
-      {error && <p className="text-BrightRed italic text-[10px]">{error.message}</p>}
+      {error && (
+        <p className="text-BrightRed text-[10px] italic">{error.message}</p>
+      )}
     </div>
   );
 };

@@ -11,11 +11,11 @@ export const ProjectDetailPage = () => {
 
   return (
     <>
-      <section className="flex flex-col gap-[64px] px-[32px] md:gap-[80px] md:px-[39px] lg:gap-[64px] lg:px-[165px]">
+      <section className="flex flex-col gap-[64px] px-[32px] md:gap-[80px] md:px-[39px] lg:gap-[64px] lg:px-[165px] pt-[40px] md:pt-[94px] ">
         <ProjectDetailContent project={project} />
         <ProjectNavigation currentSlug={slug} />
       </section>
-      <ContactCTA className="mt-[64px] md:mt-[80px] lg:mt-[115px]" />
+      <ContactCTA className="mt-[64px] md:mt-[80px] lg:mt-[115px] mb-[80px] md:mb-[96px] lg:mb-[150px]" />
     </>
   );
 };
