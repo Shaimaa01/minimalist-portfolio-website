@@ -40,14 +40,14 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row gap-[24px] md:gap-[32px] lg:gap-[125px]">
+    <section className="flex flex-col gap-[24px] md:gap-[32px] lg:flex-row lg:gap-[125px]">
       <h2 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px] text-nowrap xl:min-w-[350px]">
         Contact Me
       </h2>
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-[24px] w-full"
+        className="flex w-full flex-col gap-[24px]"
       >
         <FormField
           name="name"

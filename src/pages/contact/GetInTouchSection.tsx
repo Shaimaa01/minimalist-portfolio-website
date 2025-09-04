@@ -25,7 +25,7 @@ const socialLinks = [
 
 export const GetInTouchSection = () => {
   return (
-    <section className="border-GrayishDarkBlue/15 flex flex-col lg:flex-row gap-[24px] lg:gap-[125px] border-y pt-[25px] pb-[32px] md:pt-[32px] lg:py-[48px]">
+    <section className="border-GrayishDarkBlue/15 flex flex-col gap-[24px] border-y pt-[25px] pb-[32px] md:pt-[32px] lg:flex-row lg:gap-[125px] lg:py-[48px]">
       <h1 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px] text-nowrap xl:min-w-[350px]">
         Get in Touch
       </h1>
