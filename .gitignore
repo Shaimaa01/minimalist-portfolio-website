@@ -26,3 +26,6 @@ dist-ssr
 *.xd
 *.fig
 *.sketch
+
+# Local environment variables
+.env.local

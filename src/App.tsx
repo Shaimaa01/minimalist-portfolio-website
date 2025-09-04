@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/HomePage";
-import { ContactCTA } from "@/components/ContactCTA";
+import { ContactPage } from "./pages/ContactPage";
 import { Footer } from "@/components/Footer";
 import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { PortfolioPage } from "./pages/PortfolioPage";
@@ -24,8 +24,8 @@ function AnimatedContent() {
           <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <ContactCTA />
       </motion.main>
     </AnimatePresence>
   );

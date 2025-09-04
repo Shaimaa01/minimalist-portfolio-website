@@ -1,11 +1,13 @@
 import { HeroSection } from "./home/HeroSection";
 import { AboutSection } from "./home/AboutSection";
+import { ContactCTA } from "@/components/ContactCTA";
 
 export const HomePage = () => {
   return (
-    <section className="mb-[115px] px-[32px] md:mb-[96px] md:px-[39px] lg:mb-[150px] lg:px-[165px]">
+    <section className="px-[32px] md:px-[39px] lg:px-[165px]">
       <HeroSection />
       <AboutSection />
+      <ContactCTA className="mt-[115px] md:mt-[96px] lg:mt-[150px]" />
     </section>
   );
 };
