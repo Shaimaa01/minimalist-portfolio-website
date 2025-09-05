@@ -1,27 +1,4 @@
-import { GithubIcon } from "@/components/icons/GithubIcon";
-import { TwitterIcon } from "@/components/icons/TwitterIcon";
-import { LinkedinIcon } from "@/components/icons/LinkedinIcon";
-
-const socialLinks = [
-  {
-    href: "#",
-    IconComponent: GithubIcon,
-    label: "GitHub",
-    className: "h-6 w-6",
-  },
-  {
-    href: "#",
-    IconComponent: TwitterIcon,
-    label: "Twitter",
-    className: "h-5 w-6",
-  },
-  {
-    href: "#",
-    IconComponent: LinkedinIcon,
-    label: "LinkedIn",
-    className: "h-6 w-6",
-  },
-];
+import { SocialLinks } from "@/components/SocialLinks";
 
 export const GetInTouchSection = () => {
   return (
@@ -41,18 +18,7 @@ export const GetInTouchSection = () => {
           get in touch using the form.
         </p>
 
-        <div className="text-GrayishDarkBlue flex items-center gap-[16px]">
-          {socialLinks.map(({ href, IconComponent, label, className }) => (
-            <a
-              key={label}
-              href={href}
-              className="hover:text-SlightlyDesaturatedCyan"
-              aria-label={`View my ${label} profile`}
-            >
-              <IconComponent className={className} />
-            </a>
-          ))}
-        </div>
+        <SocialLinks colorClass="text-GrayishDarkBlue" />
       </div>
     </section>
   );

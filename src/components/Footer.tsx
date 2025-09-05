@@ -1,7 +1,6 @@
 import logoWhite from "@/assets/images/whiteLogo.svg";
-import githubIcon from "@/assets/images/icons/github.svg";
-import { TwitterIcon } from "@/components/icons/TwitterIcon";
-import linkedinIcon from "@/assets/images/icons/linkedin.svg";
+import { SocialLinks } from "@/components/SocialLinks";
+import { NavigationLinks } from "./NavigationLinks";
 
 export const Footer = () => {
   return (
@@ -9,30 +8,13 @@ export const Footer = () => {
       <div className="flex flex-col gap-[40px] md:flex-row lg:gap-[48px]">
         <img src={logoWhite} alt="Company logo" />
 
-        <ul className="flex flex-col items-center gap-[32px] text-[12px] tracking-[2px] uppercase md:flex-row lg:gap-[43px]">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Contact Me</a>
-          </li>
-        </ul>
+        <NavigationLinks
+          disableActiveState={true}
+          className="[&>a:hover]:text-SlightlyDesaturatedCyan flex flex-col items-center gap-[32px] text-[12px] tracking-[2px] uppercase md:flex-row lg:gap-[43px]"
+        />
       </div>
 
-      <div className="flex items-center justify-center gap-[16px]">
-        <a href="#">
-          <img src={githubIcon} alt="GitHub" />
-        </a>
-        <a href="#">
-          <TwitterIcon className="h-5 w-6 text-white" />
-        </a>
-        <a href="#">
-          <img src={linkedinIcon} alt="LinkedIn" />
-        </a>
-      </div>
+      <SocialLinks colorClass="text-white" />
     </footer>
   );
 };
