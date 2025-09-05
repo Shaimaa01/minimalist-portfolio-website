@@ -39,7 +39,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               behavior: "instant",
             });
           }}
-          className="border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[175px] items-center justify-center border text-[12px] tracking-[2px] uppercase"
+          className="hover:bg-GrayishDarkBlue hover:text-LightGray border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[175px] items-center justify-center border text-[12px] tracking-[2px] uppercase"
         >
           View Project
         </Link>

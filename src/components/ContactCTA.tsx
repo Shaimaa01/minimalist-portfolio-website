@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ContactCTA = ({ className = "" }) => {
   return (
     <section
@@ -7,9 +9,18 @@ export const ContactCTA = ({ className = "" }) => {
         Interested in doing a project together?
       </h3>
       <div className="bg-GrayishDarkBlue/15 hidden h-[1px] grow md:block"></div>
-      <button className="border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[162px] cursor-pointer items-center justify-center border text-[12px] tracking-[2px] uppercase">
+      <Link
+        to="/contact"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "instant",
+          });
+        }}
+        className="hover:bg-GrayishDarkBlue hover:text-LightGray border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[162px] cursor-pointer items-center justify-center border text-[12px] tracking-[2px] uppercase"
+      >
         Contact Me
-      </button>
+      </Link>
     </section>
   );
 };

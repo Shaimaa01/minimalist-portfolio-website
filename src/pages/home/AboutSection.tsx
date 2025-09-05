@@ -17,7 +17,7 @@ export const AboutSection = () => {
         />
       </picture>
 
-      <div className="border-GrayishDarkBlue/15 mt-[32px] border-y pt-[32px] pb-[51px] md:mt-0 md:h-[600px]">
+      <div  id="about" className="border-GrayishDarkBlue/15 mt-[32px] border-y pt-[32px] pb-[51px] md:mt-0 md:h-[600px]">
         <h2 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px]">
           About Me
         </h2>
@@ -39,7 +39,7 @@ export const AboutSection = () => {
               behavior: "instant",
             });
           }}
-          className="border-GrayishDarkBlue text-GrayishDarkBlue mt-[24px] flex h-[48px] w-[202px] items-center justify-center border text-[12px] tracking-[2px] uppercase"
+          className="border-GrayishDarkBlue hover:bg-GrayishDarkBlue hover:text-LightGray text-GrayishDarkBlue mt-[24px] flex h-[48px] w-[202px] items-center justify-center border text-[12px] tracking-[2px] uppercase"
         >
           Go to Portfolio
         </Link>
