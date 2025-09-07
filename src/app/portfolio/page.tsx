@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ProjectCard } from "./components/ProjectCard";
 import { projects } from "@/data/projects";
@@ -12,7 +12,7 @@ export default function PortfolioPage() {
           <ProjectCard key={project.title} project={project} />
         ))}
       </section>
-      <ContactCTA className="mt-[80px] mb-[80px] md:mt-[96px] md:mb-[96px] lg:mt-[150px] lg:mb-[150px] px-[32px]  md:px-[39px] lg:px-[165px]" />
+      <ContactCTA className="mt-[80px] mb-[80px] px-[32px] md:mt-[96px] md:mb-[96px] md:px-[39px] lg:mt-[150px] lg:mb-[150px] lg:px-[165px]" />
     </>
   );
 }

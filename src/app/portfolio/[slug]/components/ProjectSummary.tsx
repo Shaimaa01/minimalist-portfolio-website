@@ -18,7 +18,7 @@ export const ProjectSummary = ({ project }: { project: Project }) => {
           <span>{project.stack.join(" / ")}</span>
         </p>
 
-        <button className="hover:bg-GrayishDarkBlue hover:text-LightGray cursor-pointer border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[178px] items-center justify-center border text-[12px] tracking-[2px] uppercase">
+        <button className="hover:bg-GrayishDarkBlue hover:text-LightGray border-GrayishDarkBlue text-GrayishDarkBlue flex h-[48px] w-[178px] cursor-pointer items-center justify-center border text-[12px] tracking-[2px] uppercase">
           Visit Website
         </button>
       </div>

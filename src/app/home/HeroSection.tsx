@@ -6,9 +6,7 @@ import heroImageDesktop from "@/assets/images/homepage/desktop/image-homepage-he
 import { DownArrowsIcon } from "@/components/icons/DownArrowsIcon";
 import Image from "next/image";
 
-
 export const HeroSection = () => {
-
   return (
     <section className="relative">
       <picture>
@@ -26,7 +24,7 @@ export const HeroSection = () => {
         <h1 className="text-GrayishDarkBlue pt-[24px] text-[40px] leading-[42px] font-bold tracking-[-0.36px] md:pt-[56px] md:pr-[56px] lg:text-[50px] lg:leading-[50px] lg:tracking-[-0.45px]">
           Hey, I’m Alex Spencer and I love building beautiful websites
         </h1>
-        <button className="bg-DarkBlue hover:bg-SlightlyDesaturatedCyan mt-[32px] flex h-[48px] w-[200px] cursor-pointer md:mt-[48px] group">
+        <button className="bg-DarkBlue hover:bg-SlightlyDesaturatedCyan group mt-[32px] flex h-[48px] w-[200px] cursor-pointer md:mt-[48px]">
           <div className="flex h-full w-[48px] items-center justify-center bg-black/10">
             <DownArrowsIcon className="text-SlightlyDesaturatedCyan group-hover:text-white" />
           </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export const ContactCTA = ({ className = "" }) => {
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-[40px]  text-center md:flex-row md:gap-[32px]  md:text-left lg:justify-between  ${className}`}
+      className={`flex flex-col items-center justify-center gap-[40px] text-center md:flex-row md:gap-[32px] md:text-left lg:justify-between ${className}`}
     >
       <h3 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px] md:max-w-[350px]">
         Interested in doing a project together?

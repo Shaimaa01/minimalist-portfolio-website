@@ -21,7 +21,7 @@ export default function ProjectDetailPage({
         <ProjectDetailContent project={project} />
         <ProjectNavigation currentSlug={slug} />
       </section>
-      <ContactCTA className="mt-[64px] mb-[80px] md:mt-[80px] md:mb-[96px] lg:mt-[115px] lg:mb-[150px] px-[32px]  md:px-[39px] lg:px-[165px]" />
+      <ContactCTA className="mt-[64px] mb-[80px] px-[32px] md:mt-[80px] md:mb-[96px] md:px-[39px] lg:mt-[115px] lg:mb-[150px] lg:px-[165px]" />
     </>
   );
 }
