@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import type { Project } from "@/types";
+
 
 type ProjectCardProps = {
   project: Project;
@@ -7,7 +8,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="flex flex-col gap-[32px] md:flex-[69px] md:flex-row md:items-center md:even:flex-row-reverse lg:gap-[125px]">
+    <div className="flex  flex-col gap-[32px] md:flex-[69px] md:flex-row md:items-center md:even:flex-row-reverse lg:gap-[125px]">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -18,6 +19,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           srcSet={project.portfolioImages.tablet}
         />
         <img
+        
           src={project.portfolioImages.mobile}
           alt={`${project.title} project screenshot`}
           className="w-full md:min-w-[339px] xl:w-[540px]"
@@ -32,7 +34,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.description}
         </p>
         <Link
-          to={`/portfolio/${project.slug}`}
+          href={`/portfolio/${project.slug}`}
           onClick={() => {
             window.scrollTo({
               top: 0,

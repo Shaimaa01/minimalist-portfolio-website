@@ -1,3 +1,5 @@
+"use client";
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormSchema } from "./contactFormSchema";
@@ -30,7 +32,7 @@ export const ContactForm = () => {
         setSubmissionStatus("success");
         reset();
       })
-      .catch((error) => {
+      .catch((error: unknown) => {
         console.error("EmailJS submission failed:", error);
         setSubmissionStatus("error");
       })

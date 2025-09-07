@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 import { type Project } from "@/types";
 import arrowLeft from "@/assets/images/icons/arrow-left.svg";
@@ -24,11 +25,11 @@ const NavLink = ({
 
   return (
     <Link
-      to={`/portfolio/${project.slug}`}
+      href={`/portfolio/${project.slug}`}
       onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
       className={`border-GrayishDarkBlue/15 flex w-1/2 flex-col gap-[16px] py-[24px] md:items-center md:gap-[32px] md:py-[32px] ${alignment} ${border} ${row}`}
     >
-      <img src={arrowIcon} alt={label} />
+      <Image src={arrowIcon} alt={label} />
       <div>
         <h3 className="text-GrayishDarkBlue text-[32px] leading-[36px] tracking-[-0.29px]">
           {project.title}

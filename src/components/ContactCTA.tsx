@@ -1,16 +1,16 @@
-import { Link } from "react-router-dom";
-
+"use client";
+import Link from "next/link";
 export const ContactCTA = ({ className = "" }) => {
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-[40px] px-[32px] text-center md:flex-row md:gap-[32px] md:px-[39px] md:text-left lg:justify-between lg:px-[165px] ${className}`}
+      className={`flex flex-col items-center justify-center gap-[40px]  text-center md:flex-row md:gap-[32px]  md:text-left lg:justify-between  ${className}`}
     >
       <h3 className="text-GrayishDarkBlue text-[40px] leading-[42px] font-bold tracking-[-0.36px] md:max-w-[350px]">
         Interested in doing a project together?
       </h3>
       <div className="bg-GrayishDarkBlue/15 hidden h-[1px] grow md:block"></div>
       <Link
-        to="/contact"
+        href="/contact"
         onClick={() => {
           window.scrollTo({
             top: 0,

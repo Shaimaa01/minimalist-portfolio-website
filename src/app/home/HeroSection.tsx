@@ -1,19 +1,25 @@
+"use client";
+
 import heroImageMobile from "@/assets/images/homepage/mobile/image-homepage-hero@2x.jpg";
 import heroImageTablet from "@/assets/images/homepage/tablet/image-homepage-hero@2x.jpg";
 import heroImageDesktop from "@/assets/images/homepage/desktop/image-homepage-hero@2x.jpg";
 import { DownArrowsIcon } from "@/components/icons/DownArrowsIcon";
+import Image from "next/image";
+
 
 export const HeroSection = () => {
+
   return (
     <section className="relative">
       <picture>
-        <source media="(min-width: 1024px)" srcSet={heroImageDesktop} />
-        <source media="(min-width: 768px)" srcSet={heroImageTablet} />
+        <source media="(min-width: 1280px)" srcSet={heroImageDesktop.src} />
+        <source media="(min-width: 768px)" srcSet={heroImageTablet.src} />
 
-        <img
+        <Image
           src={heroImageMobile}
           alt="Portfolio preview on a monitor"
           className="w-full"
+          priority
         />
       </picture>
       <div className="bg-VeryLightGray bottom-0 md:absolute md:h-[278px] md:w-[514px] lg:h-[357px] lg:w-[445px]">

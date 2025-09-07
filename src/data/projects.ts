@@ -73,14 +73,14 @@ export const projects: Project[] = [
     slug: "manage",
     title: "Manage",
     portfolioImages: {
-      mobile: managePortfolioMobile,
-      tablet: managePortfolioTablet,
-      desktop: managePortfolioDesktop,
+      mobile: managePortfolioMobile.src,
+      tablet: managePortfolioTablet.src,
+      desktop: managePortfolioDesktop.src,
     },
     heroImages: {
-      mobile: manageHeroMobile,
-      tablet: manageHeroTablet,
-      desktop: manageHeroDesktop,
+      mobile: manageHeroMobile.src,
+      tablet: manageHeroTablet.src,
+      desktop: manageHeroDesktop.src,
     },
     description:
       "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
@@ -90,14 +90,14 @@ export const projects: Project[] = [
       "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     staticPreviews: [
       {
-        mobile: manageStatic1Mobile,
-        tablet: manageStatic1Tablet,
-        desktop: manageStatic1Desktop,
+        mobile: manageStatic1Mobile.src,
+        tablet: manageStatic1Tablet.src,
+        desktop: manageStatic1Desktop.src,
       },
       {
-        mobile: manageStatic2Mobile,
-        tablet: manageStatic2Tablet,
-        desktop: manageStatic2Desktop,
+        mobile: manageStatic2Mobile.src,
+        tablet: manageStatic2Tablet.src,
+        desktop: manageStatic2Desktop.src,
       },
     ],
   },
@@ -105,15 +105,15 @@ export const projects: Project[] = [
     slug: "bookmark",
     title: "Bookmark",
     portfolioImages: {
-      mobile: bookmarkPortfolioMobile,
-      tablet: bookmarkPortfolioTablet,
-      desktop: bookmarkPortfolioDesktop,
+      mobile: bookmarkPortfolioMobile.src,
+      tablet: bookmarkPortfolioTablet.src,
+      desktop: bookmarkPortfolioDesktop.src,
     },
 
     heroImages: {
-      mobile: bookmarkHeroMobile,
-      tablet: bookmarkHeroTablet,
-      desktop: bookmarkHeroDesktop,
+      mobile: bookmarkHeroMobile.src,
+      tablet: bookmarkHeroTablet.src,
+      desktop: bookmarkHeroDesktop.src,
     },
     description:
       "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
@@ -123,14 +123,14 @@ export const projects: Project[] = [
       "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     staticPreviews: [
       {
-        mobile: bookmarkStatic1Mobile,
-        tablet: bookmarkStatic1Tablet,
-        desktop: bookmarkStatic1Desktop,
+        mobile: bookmarkStatic1Mobile.src,
+        tablet: bookmarkStatic1Tablet.src,
+        desktop: bookmarkStatic1Desktop.src,
       },
       {
-        mobile: bookmarkStatic2Mobile,
-        tablet: bookmarkStatic2Tablet,
-        desktop: bookmarkStatic2Desktop,
+        mobile: bookmarkStatic2Mobile.src,
+        tablet: bookmarkStatic2Tablet.src,
+        desktop: bookmarkStatic2Desktop.src,
       },
     ],
   },
@@ -138,14 +138,14 @@ export const projects: Project[] = [
     slug: "insure",
     title: "Insure",
     portfolioImages: {
-      mobile: insurePortfolioMobile,
-      tablet: insurePortfolioTablet,
-      desktop: insurePortfolioDesktop,
+      mobile: insurePortfolioMobile.src,
+      tablet: insurePortfolioTablet.src,
+      desktop: insurePortfolioDesktop.src,
     },
     heroImages: {
-      mobile: insureHeroMobile,
-      tablet: insureHeroTablet,
-      desktop: insureHeroDesktop,
+      mobile: insureHeroMobile.src,
+      tablet: insureHeroTablet.src,
+      desktop: insureHeroDesktop.src,
     },
     description:
       "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
@@ -155,14 +155,14 @@ export const projects: Project[] = [
       "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     staticPreviews: [
       {
-        mobile: insureStatic1Mobile,
-        tablet: insureStatic1Tablet,
-        desktop: insureStatic1Desktop,
+        mobile: insureStatic1Mobile.src,
+        tablet: insureStatic1Tablet.src,
+        desktop: insureStatic1Desktop.src,
       },
       {
-        mobile: insureStatic2Mobile,
-        tablet: insureStatic2Tablet,
-        desktop: insureStatic2Desktop,
+        mobile: insureStatic2Mobile.src,
+        tablet: insureStatic2Tablet.src,
+        desktop: insureStatic2Desktop.src,
       },
     ],
   },
@@ -170,15 +170,15 @@ export const projects: Project[] = [
     slug: "fylo",
     title: "Fylo",
     portfolioImages: {
-      mobile: fyloPortfolioMobile,
-      tablet: fyloPortfolioTablet,
-      desktop: fyloPortfolioDesktop,
+      mobile: fyloPortfolioMobile.src,
+      tablet: fyloPortfolioTablet.src,
+      desktop: fyloPortfolioDesktop.src,
     },
 
     heroImages: {
-      mobile: fyloHeroMobile,
-      tablet: fyloHeroTablet,
-      desktop: fyloHeroDesktop,
+      mobile: fyloHeroMobile.src,
+      tablet: fyloHeroTablet.src,
+      desktop: fyloHeroDesktop.src,
     },
     description:
       "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
@@ -188,14 +188,14 @@ export const projects: Project[] = [
       "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     staticPreviews: [
       {
-        mobile: fyloStatic1Mobile,
-        tablet: fyloStatic1Tablet,
-        desktop: fyloStatic1Desktop,
+        mobile: fyloStatic1Mobile.src,
+        tablet: fyloStatic1Tablet.src,
+        desktop: fyloStatic1Desktop.src,
       },
       {
-        mobile: fyloStatic2Mobile,
-        tablet: fyloStatic2Tablet,
-        desktop: fyloStatic2Desktop,
+        mobile: fyloStatic2Mobile.src,
+        tablet: fyloStatic2Tablet.src,
+        desktop: fyloStatic2Desktop.src,
       },
     ],
   },

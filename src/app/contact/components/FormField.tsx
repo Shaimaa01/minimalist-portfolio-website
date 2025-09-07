@@ -1,5 +1,5 @@
 import { type UseFormRegister, type FieldError } from "react-hook-form";
-import { type ContactFormSchema } from "@/pages/contact/contactFormSchema";
+import { type ContactFormSchema } from "@/app/contact/components/contactFormSchema";
 
 type FormFieldProps = {
   name: keyof ContactFormSchema;

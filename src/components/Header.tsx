@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
 import hamburgerIcon from "@/assets/images/icons/hamburger.svg";
 import closeIcon from "@/assets/images/icons/close.svg";
@@ -10,15 +12,15 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <header className="bg-VeryLightGray relative flex items-center justify-between px-[32px] pt-[32px] md:px-[39px] md:pt-[64px] lg:px-[165px]">
-      <img src={logo} alt="Company logo" />
+      <Image src={logo} alt="Company logo" />
 
       <NavigationLinks className="[&>a:hover]:text-SlightlyDesaturatedCyan text-GrayishDarkBlue hidden items-center gap-[43px] text-[12px] tracking-[2px] uppercase md:flex" />
 
       <button onClick={toggleMenu} className="z-50 cursor-pointer md:hidden">
         {isMenuOpen ? (
-          <img src={closeIcon} alt="Close Menu" />
+          <Image src={closeIcon} alt="Close Menu" />
         ) : (
-          <img src={hamburgerIcon} alt="Open menu" />
+          <Image src={hamburgerIcon} alt="Open menu" />
         )}
       </button>
 

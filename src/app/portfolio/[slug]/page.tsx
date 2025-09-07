@@ -1,11 +1,17 @@
-import { useParams } from "react-router-dom";
+"use client";
+
+import { use } from "react";
 import { projects } from "@/data/projects";
-import { ProjectDetailContent } from "./project-detail/ProjectDetailContent";
-import { ProjectNavigation } from "./project-detail/ProjectNavigation";
+import { ProjectDetailContent } from "./components/ProjectDetailContent";
+import { ProjectNavigation } from "./components/ProjectNavigation";
 import { ContactCTA } from "@/components/ContactCTA";
 
-export const ProjectDetailPage = () => {
-  const { slug } = useParams();
+export default function ProjectDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = use(params);
   const project = projects.find((p) => p.slug === slug);
   if (!project || !slug) return <div>Project not found!</div>;
 
@@ -15,7 +21,7 @@ export const ProjectDetailPage = () => {
         <ProjectDetailContent project={project} />
         <ProjectNavigation currentSlug={slug} />
       </section>
-      <ContactCTA className="mt-[64px] mb-[80px] md:mt-[80px] md:mb-[96px] lg:mt-[115px] lg:mb-[150px]" />
+      <ContactCTA className="mt-[64px] mb-[80px] md:mt-[80px] md:mb-[96px] lg:mt-[115px] lg:mb-[150px] px-[32px]  md:px-[39px] lg:px-[165px]" />
     </>
   );
-};
+}
